@@ -1,0 +1,493 @@
+:root
+{
+
+    --wp-admin-theme-color:#ed555a;
+    --Theme_Color:#ed555a;
+    --Background_Theme_Color:#22252a;
+    --Primery_Theme_Color:#2d3035;
+    --White_Color:#FFFFFF;
+    --Text_Color:#646970;
+
+    --Standard-Radius:15px;
+}
+
+@font-face
+{
+    font-family: 'vazir';
+    src: url('../font/Vazir.ttf');
+}
+
+@font-face
+{
+    font-family: 'b koodak bold';
+    src: url('../font/B\ Koodak\ Bold_0.ttf');
+}
+
+@font-face
+{
+    font-family: 'b koodak outline';
+    src: url('../font/B\ Koodak\ Outline_0.ttf');
+}
+
+@font-face
+{
+    font-family: 'iranyekanweb';
+    src: url('../font/Yekan.ttf');
+}
+
+*
+{
+    font-family: 'iranyekanweb';
+    outline: none !important;
+    border: none !important;
+}
+
+
+*::selection
+{
+    background: var(--Theme_Color);
+    color: var(--White_Color);
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap,#wpadminbar
+{
+    background: var(--Primery_Theme_Color) !important;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu
+{
+    background: var(--Background_Theme_Color) !important;
+    border-left:1px solid var(--Theme_Color) !important;
+    border-right:1px solid var(--Theme_Color) !important;
+}
+
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:after
+{
+    display: none !important;
+}
+
+#postbox-container-2
+{
+    display: none !important;
+}
+
+#screen-meta-links .show-settings,#wpadminbar #wp-admin-bar-my-account a.ab-item, #wpadminbar #wp-admin-bar-my-sites a.ab-item, #wpadminbar #wp-admin-bar-site-name a.ab-item,#wp-admin-bar-new-content,.wrap>h1,#wp-admin-bar-comments,#wp-admin-bar-wp-logo,#wpfooter
+{
+    display: none !important;
+}
+
+.auto-fold #adminmenu .opensub .wp-submenu, .auto-fold #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, .auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu, .auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu, .auto-fold #adminmenu .wp-submenu.sub-open, .auto-fold #adminmenu a.menu-top:focus+.wp-submenu
+{
+    border-radius: var(--Standard-Radius);
+}
+
+.wrap .wp-heading-inline+.page-title-action,p.search-box input[type=submit]
+{
+    border: none;
+    border-radius: var(--Standard-Radius);
+    padding: 5px 14px;
+}
+
+
+#doaction,#post-query-submit,#doaction2,.button,#changeit2,#changeit
+{
+    border: none;
+    border-radius: var(--Standard-Radius);
+    background: var(--Theme_Color);
+    color: var(--White_Color);
+}
+
+
+select
+{
+    border: none !important;
+    border-radius: var(--Standard-Radius) !important;
+}
+
+
+.widefat tfoot tr td, .widefat tfoot tr th, .widefat thead tr td, .widefat thead tr th
+{
+    color:var(--Text_Color) !important;
+}
+
+
+.widefat *
+{
+    color:var(--Text_Color);
+}
+
+
+
+.manage-column
+{
+    color: var(--White_Color) !important;
+}
+
+
+table
+{    
+    border-radius: var(--Standard-Radius);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+.form-table th,.form-table .td-full, .form-table th.th-full
+{
+    padding: 20px 20px 20px 20px !important;
+    color: var(--White_Color) !important;
+}
+
+
+.form-table td
+{
+    color: var(--White_Color) !important;
+}
+
+
+.wrap .wp-heading-inline + .page-title-action
+{
+    color: var(--White_Color) !important;
+}
+
+
+.rendered
+{
+    margin-top: 25px;
+}
+
+
+.current,.all
+{
+    color: var(--White_Color) !important;
+}
+
+
+span
+{
+    color:var(--Text_Color);
+}
+
+
+p.search-box input[name="s"],input,textarea
+{
+    background: var(--White_Color); 
+    padding: 2px 14px;
+    font-size: 16px;    
+    border-radius: var(--Standard-Radius) !important;
+}
+
+
+.manage-menus,#nav-menu-header,#nav-menu-footer
+{
+    outline: none !important;
+    border: none !important;
+    background: var(--Primery_Theme_Color) !important;
+    border-radius: var(--Standard-Radius);
+    box-shadow: none !important;
+}
+
+
+table.fixed
+{   
+    margin: 24px 0;
+}
+
+
+.menu-name-label
+{
+    color: var(--White_Color) !important;
+}
+
+
+.components-panel__body>*,.is-opened>*,.editor-post-title,.editor-post-title__input
+{
+    color:var(--White_Color);
+}
+
+
+#taxonomy-featured_item_category>*
+{
+    color:var(--Text_Color);
+}
+
+
+.site-status-has-issues>*,.site-health-issues-wrapper>*
+{
+    color: var(--White_Color) !important;
+}
+
+
+.file-editor-warning-message>*,.health-check-accordion-panel>*
+{
+    color:var(--Text_Color) !important;
+}
+
+
+.file-editor-warning-go-back
+{
+    border:1px solid var(--Theme_Color) !important;
+    color: var(--Theme_Color) !important;
+    outline: none !important;
+}
+
+
+.file-editor-warning-dismiss
+{
+    background: var(--Theme_Color) !important;
+    outline: none !important;
+}
+
+
+.privacy-settings-tabs-wrapper>*
+{
+    color:var(--Theme_Color) !important;
+    box-shadow: inset 0 -3px var(--Theme_Color) !important;
+}
+
+
+.privacy-settings-body>*
+{
+    color:var(--White_Color) !important;
+}
+
+
+#minor-publishing,#block_categories-adder>a
+{
+    color:var(--Text_Color) !important;
+}
+
+
+.wp-core-ui .button-primary
+{
+    background:var(--Theme_Color) !important;
+}
+
+
+.health-check-tabs-wrapper>*
+{
+    color:var(--Theme_Color) !important;
+    box-shadow: inset 0 -3px var(--Theme_Color) !important;
+}
+
+
+.nav-tab-active, .nav-tab-active:focus, .nav-tab-active:focus:active, .nav-tab-active:hover,#submit
+{
+    border: none;
+    border-radius: var(--Standard-Radius) !important;
+    background: var(--Theme_Color) !important;
+    color: var(--White_Color) !important;
+}
+
+
+#save-post
+{
+    border: none;
+    border-radius: var(--Standard-Radius) !important;
+    background: var(--Theme_Color) !important;
+    color: var(--White_Color) !important;
+    margin: 10px !important;
+}
+
+
+#adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top>a:focus,#adminmenu li a:focus div.wp-menu-image::before, #adminmenu li.opensub div.wp-menu-image::before, #adminmenu li:hover div.wp-menu-image::before
+{
+    color:var(--Theme_Color) !important;
+}
+
+
+.block-editor-inserter__quick-inserter .block-editor-inserter__panel-content,.components-modal__frame, .components-popover, .edit-post-header, .edit-post-layout__inserter-panel, .edit-post-sidebar, .edit-post-text-editor, .edit-post-visual-editor, .editor-post-publish-panel
+{
+    background: var(--Background_Theme_Color) !important;   
+}
+
+
+.components-button.is-primary
+{
+    background: var(--Theme_Color) !important;
+}
+
+
+.edit-post-fullscreen-mode-close.has-icon,.wp-core-ui .notice.is-dismissible,.media-upload-form .notice, .media-upload-form div.error, .wrap .notice, .wrap div.error, .wrap div.updated
+{
+    display: none !important;
+}
+
+
+.components-accessible-toolbar .components-button svg, .components-toolbar .components-button svg,.components-accessible-toolbar .components-button.components-tab-button span, .components-toolbar .components-button.components-tab-button span
+{
+    color:var(--Text_Color) !important;
+}
+
+
+.components-dropdown__content .components-popover__content > div
+{
+    background: var(--Background_Theme_Color);
+}
+
+
+.components-menu-item__shortcut,.components-menu-item__button, .components-menu-item__button.components-button,
+.block-editor-block-list__layout .wp-block
+{
+    color: var(--White_Color) !important;
+}
+
+
+.table-of-contents__popover .components-popover__content > div
+{
+    background: var(--White_Color);
+}
+
+
+.interface-interface-skeleton__footer,.components-editor-notices__dismissible
+{
+    display: none !important;
+}
+
+.editor-styles-wrapper,.media-frame.mode-grid .media-toolbar
+{
+    background: var(--Primery_Theme_Color) !important;
+}
+
+
+.components-button svg
+{
+    color:var(--White_Color);
+}
+
+
+.editor-post-publish-panel__prepublish
+{
+    background:var(--White_Color);
+}
+
+
+.edit-post-layout .editor-post-publish-panel
+{
+    background: var(--White_Color);
+}
+
+
+.CalendarMonth_table
+{
+    margin: 10px -13px;
+}
+
+
+.postbox .handle-order-higher .order-higher-indicator::before, .postbox .handle-order-lower .order-lower-indicator::before
+{
+    color:var(--Text_Color) !important;
+}
+
+
+.block-editor-block-types-list__item-icon .block-editor-block-icon,.components-button.has-icon.has-text svg
+{
+    color: var(--Text_Color) !important;
+}
+
+
+.css-1l8z26q-StyledTextarea-inputStyleNeutral-inputStyleFocus-inputControl,.components-form-token-field__input-container input[type="text"].components-form-token-field__input
+{
+    border: 1px solid var(--Text_Color) !important;
+    outline: none !important;
+}
+
+
+.components-panel__header.edit-post-sidebar__panel-tabs li,.interface-complementary-area .components-panel__header,.interface-complementary-area .components-panel__header.edit-post-sidebar__panel-tabs
+{
+    display: none;
+}
+
+
+.interface-complementary-area .components-panel
+{
+    background: var(--White_Color);
+}
+
+
+.notice-info.notice-alt
+{
+    background: var(--Primery_Theme_Color);
+    background-color: var(--Primery_Theme_Color) !important;
+}
+
+
+.license-table,.update-plugins
+{
+    background: var(--White_Color) !important;
+}
+
+
+#beacon-container
+{
+    display: none;
+}
+
+
+.inner-panel>*
+{
+    color: var(--Text_Color);
+}
+
+
+.sc-fzozJi,.lgnIzU,.c-FabButton__text
+{
+    display: none !important;
+}
+
+
+a
+{
+    color:var(--Theme_Color);
+    text-decoration: none;
+}
+
+
+label
+{
+    color: var(--Text_Color);
+}
+
+
+.inside>p,.site-health-progress-label
+{
+    color:var(--Text_Color) !important;
+}
+
+
+input,textarea
+{
+    border: 1px solid var(--Text_Color) !important;
+}
+
+
+@media screen and (min-width:770px)
+{
+    #wpadminbar
+    {
+        display: none !important;
+    }
+    
+    #adminmenuback
+    {
+        height: max-content;
+    }
+
+    html.wp-toolbar
+    {
+        padding-top: 14px !important;
+    }
+
+    #adminmenuwrap
+    {
+        border-radius: var(--Standard-Radius);
+        overflow: hidden;
+    }
+
+    #adminmenuwrap
+    {
+        margin: 10px;
+    }
+
+}
